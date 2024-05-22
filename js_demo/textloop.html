@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="hamster"> <p> gerbil
+        </p>
+    </div>
+
+    <script>
+
+        function makeHamLine1() {
+            let image = document.createElement('img');
+            image.src = 'anin.gif';
+            document.getElementById('hamLine1').appendChild(image);
+        }
+
+        for (let i = 0; i < 10; i++) {
+            makeHamLine1();
+        }
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function playGame(){
+       var startgame = confirm('Do you want to play my game?');
+       if (startgame == true) {
+            //the game starts
+            alert('You come across a old wooden cabin in the woods. it is run down and falling apart.');
+
+                var enterCabin = prompt("1 (Enter) or 2 (look around?)");
+                if (enterCabin == 1) {
+                alert("Alert: Game Over, you open the door and a rusty nail shoots out of a trip wired spring and kills you.");
+                } else {
+                alert('You go around and find a slightly opened back door, busted window, and a white van with "free candy" spray painted on it.');
+                }
+
+                    var enterChoice = prompt("1 (back door) 2 (busted window) 3 (white van)");
+                    if (enterChoice ==1) {
+                    alert("Alert: Game Over, you open the door and a rusty nail shoots out of a trip wired spring and kills you.");
+                    } else if (enterChoice == 3) {
+                    alert("Alert: Did you really just enter a white van? Your parents should be ashamed. A creepy man popped out and ate you for dinner.");
+                    } else (enterChoice == 2) 
+                    alert("You entered through the window and a glass shard opened up in your arm and sprayed forbidden Kool aid everywhere");
+                        var medicalChoice = prompt("You find a pack of Finding Nemo band-aids and a green bubbling potion which one do you put on your arm? 1 (Old Nimo bandaids) 2 (green bubbling potion)");
+                        if (medicalChoice ==1) {
+                        alert("Alert: The band-aids had the rare dory virus in them, you forgot everything including how to breathe and suffocated ):");
+                        } else if (medicalChoice ==2) {
+                        alert("The green concoction was just mountain dew which surprisingly has great healing properties and fixed your arm");
+                            var leaveChoice = prompt("You explore further into the house and find 2 exits, a green portal and a door with water leaking through it. 1 (green portal) 2 (water door)");
+                            if (leaveChoice ==1) {
+                            alert("You walk through the portal and get teleported back to mario world, he feeds you to a pirana plant, wowwwww.");
+                            } else if (leaveChoice ==2) {
+                            alert("You open the door and it was just raining no biggie. You escape and treat yourself to ice cream");
+                            }
+                         }
+                            
+            } else {
+        //the game doesnt start
+        alert("the game barely even started and your already quitting? Maybe sit and think about your life for a minute and then press play again, okay?");
+       }
+
+       var playAgain = confirm("Do you want to play again?")
+       if (playAgain ==true) {
+            playAgain();
+       } else {
+            alert("Thanks for playing, goodbye!")
+       }
+    }
+    playGame();
+    </script>
+</body>
+</html>
